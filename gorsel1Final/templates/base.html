@@ -1,0 +1,31 @@
+{% include "parts/_header.html" %}
+
+{% include "parts/_menu.html" %}
+<div class="container-fluid text-left" style="min-height:300px;">    
+    <div class="row content">
+      <div class="col-sm-2 sidenav">
+        <p><a href="/telephoneekle">Telefon Ekle</a></p>
+        
+      </div>
+      <div class="col-sm-8 text-left"> 
+        {% block content %}
+        
+        {% endblock %}
+      </div>
+      <div class="col-sm-2 sidenav">
+        <div class="well">
+          <p>ADS</p>
+        </div>
+        <div class="well">
+          <p>ADS</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+{% include "parts/_footer.html" %}

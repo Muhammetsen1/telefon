@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+Telefon sayfası  
+<hr>
+{% for k in veri %}
+
+
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">{{k[1]}}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">{{k[2]}}</h6>
+    <a href="telephonedetay/{{k[0]}}" class="btn btn-primary">Telefon detayı</a>
+    <a href="telephonesil/{{k[0]}}" class="btn btn-primary">Sil</a>
+    <a href="telephoneguncelle/{{k[0]}}" class="btn btn-primary">Güncelle</a>
+
+  </div>
+</div>
+
+  
+
+{% endfor%}
+
+
+
+
+{% endblock %}

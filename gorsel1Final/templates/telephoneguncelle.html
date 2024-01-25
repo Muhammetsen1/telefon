@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Telefon güncelle </h1>
+
+
+    <form method="post">
+        <input type="hidden" name="telephoneID" value="{{veri[0]}}"><br>
+        <label> Telefon Adı : </label>
+        <input type="text" name="telephonetitle" value="{{veri[1]}}"><br>
+        <label> Marka Adı : </label>
+        <input type="text" name="telephonebrand"value="{{veri[2]}}"><br>
+        <label> Yapım Yılı : </label>
+        <input type="text" name="telephoneyear"value="{{veri[3]}}"><br>
+        <input type="submit">
+    
+    </form>
+    
+    
+      
+
+{% endblock %}
